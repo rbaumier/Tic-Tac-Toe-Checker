@@ -31,7 +31,7 @@ function win(board, n) {
       return el == n ? m.push((i * 3 + num) + 1) : null;
     });
     return m;
-  }, [])
+  }, []);
   return checkIfWin(m);
 }
 
