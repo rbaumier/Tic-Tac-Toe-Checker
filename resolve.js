@@ -28,7 +28,7 @@ function checkIfWin(arr) {
 function win(board, n) {
   var m = board.reduce(function(m, arr, i) {
     arr.forEach(function(el, num) {
-      return el == n ? m.push((i * 3 + num) + 1) : null;
+      return el == n ? m.push(i * 3 + num + 1) : null;
     });
     return m;
   }, []);
